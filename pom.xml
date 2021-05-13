@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kaituo</groupId>
+    <artifactId>taurus-wsdl</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+
+        <dependency>
+            <groupId>activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/activation.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>axis</groupId>
+            <artifactId>axis</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/axis.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>axis-ant</groupId>
+            <artifactId>axis-ant</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/axis-ant.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>axis-schema</groupId>
+            <artifactId>axis-schema</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/axis-schema.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>commons-discovery-0.2</groupId>
+            <artifactId>commons-discovery-0.2</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/commons-discovery-0.2.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>commons-logging-1.0.4</groupId>
+            <artifactId>commons-logging-1.0.4</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/commons-logging-1.0.4.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>jaxrpc</groupId>
+            <artifactId>jaxrpc</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jaxrpc.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>log4j-1.2.8</groupId>
+            <artifactId>log4j-1.2.8</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/log4j-1.2.8.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/mail.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>saaj</groupId>
+            <artifactId>saaj</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/saaj.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>wsdl4j-1.5.1</groupId>
+            <artifactId>wsdl4j-1.5.1</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/wsdl4j-1.5.1.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>xmlsec</groupId>
+            <artifactId>xmlsec</artifactId>
+            <version>2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/xmlsec.jar</systemPath>
+        </dependency>
+
+
+
+
+
+
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.4.RELEASE</version>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
