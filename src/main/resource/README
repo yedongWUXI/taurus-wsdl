@@ -1,8 +1,14 @@
-执行 generate.bat,根据wsdl生成webservice文件
+## 用法
+1.修改 generate.bat里的wsdl地址
+2.执行 generate.bat,根据wsdl生成webservice文件
 
 
+## 知识点
+### WSDL
+(Web服务描述语言，Web Services Description Language)
+是以XML格式 来描述Web服务
 
-lib里的jar包有两种用途：
+### lib里的jar包有两种用途：
 1.生成webservice文件
 2.webservice文件的依赖
 
