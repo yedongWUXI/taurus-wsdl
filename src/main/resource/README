@@ -1,6 +1,7 @@
 ## 用法
 1.修改 generate.bat里的wsdl地址
-2.执行 generate.bat,根据wsdl生成webservice文件
+1.修改 generate.bat里的Axis_Lib位置
+3.执行 generate.bat,根据wsdl生成webservice文件
 
 
 ## 知识点
@@ -12,6 +13,9 @@
 1.生成webservice文件
 2.webservice文件的依赖
 
+
+ps：
+main/java下的所有代码都是生成的  源码就一个generate.bat
 
 
 

@@ -1,3 +1,5 @@
+import com.ldclass.ws_sb_demo.service.DemoServiceSoapBindingStub;
+import com.ldclass.ws_sb_demo.service.DemoService_ServiceLocator;
 import org.apache.axis.AxisFault;
 import org.apache.axis.types.URI;
 import org.csapi.www.schema.common.v2_0.PolicyException;
@@ -25,6 +27,9 @@ import java.util.List;
  */
 
 public class CommonTest {
+
+
+
     @Test
     public void test() {
         SendSmsRequest sendSmsRequest = new SendSmsRequest();
@@ -67,5 +72,17 @@ public class CommonTest {
         } catch (RemoteException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void test2() throws Exception {
+        DemoService_ServiceLocator demoService_serviceLocator = new DemoService_ServiceLocator();
+
+        DemoServiceSoapBindingStub demoServiceSoapBindingStub = new DemoServiceSoapBindingStub(new URL(demoService_serviceLocator.getDemoServiceImplPortAddress()), new
+                org.apache.axis.client.Service());
+
+        String response = demoServiceSoapBindingStub.getProp("zhangyedong");
+
+        System.out.println(response);
     }
 }
